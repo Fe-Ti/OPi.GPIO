@@ -4,15 +4,14 @@
 
 """
 Alternative pin mappings for Repka Pi 4 Optimal
-(https://linux-sunxi.org/images/5/50/OrangePi_3_Schematics_v1.5.pdf)
 
 Usage:
 
 .. code:: python
-   import repka.repka4
+   import repka.repka4o
    from OPi import GPIO
 
-   GPIO.setmode(repka.repka4.BOARD) or GPIO.setmode(repka.repka4.BCM)
+   GPIO.setmode(repka.repka4o.BOARD) or GPIO.setmode(repka.repka4o.BCM)
 """
 
 # pin number = (position of letter in alphabet - 1) * 32 + pin number
@@ -20,10 +19,10 @@ Usage:
 
 # Repka Pi 4 Optimal physical board pin to GPIO pin
 BOARD = {
-    3: 122,
-    5: 121,
-    7: 362,
-    8: 224,
+    3:  122,
+    5:  121,
+    7:  362,
+    8:  224,
     10: 225,
     11: 111,
     12: 203,
